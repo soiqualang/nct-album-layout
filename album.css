@@ -1,0 +1,78 @@
+.singer_playlist_new .box_name_album_info .info_album .avatar_album {
+    width: 300px;
+    height: 180px;
+    position: relative;
+}
+
+.singer_playlist_new .box_name_album_info .info_album .avatar_album .rotate_album {
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    z-index: 17;
+    left: 87px;
+    top: 9px;
+}
+
+.singer_playlist_new .box_name_album_info .info_album .avatar_album .box_font_album {
+    width: 180px;
+    position: absolute;
+    z-index: 20;
+    background: url(https://stc-id.nixcdn.com/v11/images/icon.png) -261px -170px no-repeat;
+    height: 180px;
+}
+
+.singer_playlist_new .box_name_album_info .info_album .avatar_album .box_bg_album {
+    width: 260px;
+    position: absolute;
+    z-index: 19;
+    background: url(https://stc-id.nixcdn.com/v11/images/icon.png) left -170px no-repeat;
+    height: 200px;
+    overflow: hidden;
+}
+
+.icon_play_single_playlist {
+    position: absolute;
+    z-index: 101;
+    top: 50%;
+    left: 50%;
+    margin: -24px 0 0 -24px;
+    width: 48px;
+    height: 48px;
+    display: block;
+    background: url(https://stc-id.nixcdn.com/v11/images/icon.png) left -28px no-repeat;
+}
+
+
+
+.singer_playlist_new .box_name_album_info .info_album .avatar_album .rotate_album img {
+    width: 164px;
+    height: 164px;
+}
+
+.rotate {
+    -webkit-border-radius: 90px;
+    -moz-border-radius: 90px;
+    border-radius: 90px;
+    animation: mymove 10s linear 0s infinite;
+    -webkit-animation: mymove 10s linear 0s infinite;
+    -moz-animation: mymove 10s linear 0s infinite;
+    -o-animation: mymove 10s linear 0s infinite;
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+    overflow: hidden;
+}
+
+/* ENDLESS ROTATE */
+.rotate{
+  /*animation: rotate 1.5s linear infinite; */
+  animation: mymove 10s linear 0s infinite;
+}
+@keyframes rotate{
+  to{ transform: rotate(360deg); }
+}
